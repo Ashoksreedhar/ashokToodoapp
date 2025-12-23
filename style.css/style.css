@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: linear-gradient(100deg, #575656, #062e3f);
+    color: #ffdfdb;
+    /* color: white; */
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 5%;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+    justify-content: space-around;
+    width: 100%;
+    min-height: 25vh;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+form {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: center;
+    margin: 10px;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+form input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #01394c;
+    color: white;
+}
+
+form button {
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #001f29;
+    color: white;
+    cursor: pointer;
+
+}
+
+
+.task {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.toodo {
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-right: 125px;
+    border: 1px solid #ccc;
+    min-height: 50px;
+    background-color: #01394c;
+    color: #ffdfdb;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border: none;
+    outline: none;
+}
+
+.toodo li {
+    list-style: none;
+}
+
+.content {
+    flex: 1;
+    padding: 15px;
+    outline: none;
+
+
+}
+
+.btn {
+
+    position: absolute;
+    right: 5px;
+    display: flex;
+    gap: 3px;
+
+}
+
+.button1 {
+    cursor: pointer;
+
+}
+
+.button1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #001f29;
+    color: #fff;
+    border: none;
+    outline: none;
+
+}
+
+button i {
+    font-size: 18px;
+    font-weight: bolder;
+
+}
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+
+/* Mediaquery */
+
+@media only screen and (max-width: 600px) {
+    #header {
+        font-size: 25px;
+
+    }
+
+    form input {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px;
+        font-size: 15px;
+
+    }
+
+    form button {
+        padding: 10px;
+        font-size: 15px;
+
+
+    }
+
+    form {
+
+        margin: 15px 0;
+
+    }
+
+    .toodo {
+        font-size: 18px;
+    }
+
+    button i {
+        font-size: 14px;
+        font-weight: bolder;
+
+    }
+
+    .button1 {
+        width: 35px;
+        height: 35px;
+    
+
+    }
+}
